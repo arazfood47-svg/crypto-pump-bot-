@@ -9,7 +9,7 @@ TOKEN = '8805980552:AAHZwYR6Xu11PY8nQxEeBv6zlcgRb5ii9Ic'  # توکن ربات ت
 CHAT_ID = '6254027493'            # آیدی عددی تلگرام خود را اینجا بگذارید
 
 bot = telebot.TeleBot(TOKEN)
-exchange = ccxt.binance({
+exchange = ccxt.kucoin({
     'enableRateLimit': True,
     'options': {'defaultType': 'spot'}
 })
